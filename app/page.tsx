@@ -22,6 +22,7 @@ export default function Home() {
   }
 
   return (
+    <>
     <main className="p-6 max-w-6xl mx-auto">
       <h1 className="text-2xl font-semibold mb-6 text-center">VimeWorld Emojis</h1>
 
@@ -50,5 +51,11 @@ export default function Home() {
         ))}
       </Tabs>
     </main>
+    <div className="w-full flex justify-center mt-8 mb-4">
+      <a href="https://t.me/ArnoGevorkyan" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-blue-500 transition-colors">
+        я хочу тун тун тун сахур
+      </a>
+    </div>
+  </>
   )
 }
