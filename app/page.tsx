@@ -3,7 +3,7 @@
 import { useState } from "react"
 import EmojiGrid from "@/components/emoji-grid"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import emojiData from "@/data/emoji-data"
+import emojiData from "@/data/emoji-data.js"
 
 export default function Home() {
   const [copiedItem, setCopiedItem] = useState<{ value: string; type: "character" | "id" } | null>(null)
