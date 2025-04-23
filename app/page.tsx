@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-semibold mb-6 text-center">Пустите RedlyBoy на бистгеймс 2 плиз</h1>
+      <h1 className="text-2xl font-semibold mb-6 text-center">VimeWorld Emojis</h1>
 
       {copiedItem && (
         <div className="fixed top-4 right-4 bg-green-100 border border-green-300 text-green-700 px-4 py-2 rounded-md shadow-md animate-fade-in-out">
@@ -33,13 +33,15 @@ export default function Home() {
       )}
 
       <Tabs defaultValue={categories[0]}>
-        <TabsList className="mb-4 flex flex-wrap">
-          {categories.map((category) => (
-            <TabsTrigger key={category} value={category} className="mb-1">
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="overflow-x-auto">
+  <TabsList className="mb-4 inline-flex w-auto justify-start">
+    {categories.map((category) => (
+      <TabsTrigger key={category} value={category} className="mb-1">
+        {category}
+      </TabsTrigger>
+    ))}
+  </TabsList>
+</div>
 
         {categories.map((category) => (
           <TabsContent key={category} value={category}>
